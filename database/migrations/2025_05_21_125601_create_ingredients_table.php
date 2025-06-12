@@ -11,13 +11,16 @@ return new class extends Migration
         Schema::create('ingredients', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->integer('kcal')->nullable();
-            $table->integer('matieres_grasses')->nullable();
-            $table->integer('dont_acides_gras_saturés')->nullable();
-            $table->integer('glucides')->nullable();
-            $table->integer('dont_sucres')->nullable();
-            $table->integer('proteines')->nullable();
-            $table->integer('sel')->nullable();
+            $table->float('kcal')->nullable();
+            $table->float('eau')->nullable();
+            $table->float('lipides')->nullable();
+            $table->float('ags')->nullable();
+            $table->float('glucides')->nullable();
+            $table->float('sucres')->nullable();
+            $table->float('fibres')->nullable();
+            $table->float('proteines')->nullable();
+            $table->float('sel')->nullable();
+
         });
     }
 
