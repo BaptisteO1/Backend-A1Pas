@@ -29,20 +29,20 @@ class RecipeSeeder extends Seeder
     ]);
 
     $cesarIngredients = [
-        ['name' => 'huile', 'quantity' => 2, 'unity' => 'c. à s.'],
-        ['name' => 'laitue', 'quantity' => 2, 'unity' => 'cœurs'],
+        ['name' => 'huile', 'quantity' => 27, 'unity' => 'g (2 c. à s.)'],
+        ['name' => 'laitue', 'quantity' => 360, 'unity' => 'g (2 cœurs)'],
         ['name' => 'Parmesan (copeaux)', 'quantity' => 25, 'unity' => 'g'],
-        ['name' => 'pain', 'quantity' => 4, 'unity' => 'tranches'],
-        ['name' => 'moutarde', 'quantity' => 1, 'unity' => 'c. à c.'], // "½" remplacé par 1
-        ['name' => 'tabasco', 'quantity' => 1, 'unity' => 'trait'],
-        ['name' => 'huile (pour la sauce)', 'quantity' => 15, 'unity' => 'cl'],
-        ['name' => 'poivre', 'quantity' => 1, 'unity' => 'pincée'], // "au goût" → approximation
-        ['name' => 'sel', 'quantity' => 1, 'unity' => 'pincée'],
-        ['name' => 'œuf', 'quantity' => 1, 'unity' => ''],
+        ['name' => 'pain', 'quantity' => 120, 'unity' => 'g (4 tranches)'],
+        ['name' => 'moutarde', 'quantity' => 5, 'unity' => 'g (1 c. à c.)'],
+        ['name' => 'tabasco', 'quantity' => 0.5, 'unity' => 'g (1 trait)'],
+        ['name' => 'huile (pour la sauce)', 'quantity' => 138, 'unity' => 'g (15 cl)'],
+        ['name' => 'poivre', 'quantity' => 0.3, 'unity' => 'g (1 pincée)'],
+        ['name' => 'sel', 'quantity' => 0.3, 'unity' => 'g (1 pincée)'],
+        ['name' => 'œuf', 'quantity' => 50, 'unity' => 'g (1 œuf moyen)'],
         ['name' => 'parmesan râpé', 'quantity' => 25, 'unity' => 'g'],
-        ['name' => 'câpres', 'quantity' => 2, 'unity' => 'c. à c.'],
-        ['name' => 'citron', 'quantity' => 1, 'unity' => ''],
-        ['name' => 'ail', 'quantity' => 1, 'unity' => 'gousse'], // "1 gousse pelée" → "1 gousse"
+        ['name' => 'câpres', 'quantity' => 10, 'unity' => 'g (2 c. à c.)'],
+        ['name' => 'citron', 'quantity' => 110, 'unity' => 'g (1 citron moyen)'],
+        ['name' => 'ail', 'quantity' => 4, 'unity' => 'g (1 gousse)'],
     ];
 
 
@@ -83,11 +83,11 @@ class RecipeSeeder extends Seeder
 
     $falafelIngredients = [
         ['name' => 'semoule', 'quantity' => 60, 'unity' => 'g'],
-        ['name' => 'falafel (frais)', 'quantity' => 5, 'unity' => ''],
+        ['name' => 'falafel (frais)', 'quantity' => 5, 'unity' => 'pièces'],
         ['name' => 'tzatziki', 'quantity' => 60, 'unity' => 'g'],
         ['name' => 'concombre', 'quantity' => 100, 'unity' => 'g'],
-        ['name' => 'persil (frais)', 'quantity' => 1, 'unity' => '/10 bouquet'], // facultatif
-        ['name' => 'huile d\'olive', 'quantity' => 1, 'unity' => 'c. à s.'],
+        ['name' => 'persil (frais)', 'quantity' => 3, 'unity' => 'g (1/10 bouquet)'],
+        ['name' => 'huile d\'olive', 'quantity' => 13.5, 'unity' => 'g (1 c. à s.)'],
     ];
 
     foreach ($falafelIngredients as $ing) {
@@ -125,12 +125,12 @@ class RecipeSeeder extends Seeder
     ]);
 
     $wrapIngredients = [
-        ['name' => 'avocat', 'quantity' => 0.5, 'unity' => ''],
-        ['name' => 'tortilla (blé)', 'quantity' => 1, 'unity' => ''],
+        ['name' => 'avocat', 'quantity' => 100, 'unity' => 'g (0.5 avocat)'],
+        ['name' => 'tortilla (blé)', 'quantity' => 60, 'unity' => 'g (1 tortilla)'],
         ['name' => 'fromage frais', 'quantity' => 30, 'unity' => 'g'],
-        ['name' => 'concombre', 'quantity' => 0.2, 'unity' => ''], // 1/5 ≈ 0.2
-        ['name' => 'pignons de pin', 'quantity' => 1, 'unity' => 'c. à s.'], // facultatif
-        ['name' => 'épinard (frais)', 'quantity' => 0.5, 'unity' => 'poignée'],
+        ['name' => 'concombre', 'quantity' => 60, 'unity' => 'g (0.2 concombre)'],
+        ['name' => 'pignons de pin', 'quantity' => 8, 'unity' => 'g (1 c. à s.)'],
+        ['name' => 'épinard (frais)', 'quantity' => 15, 'unity' => 'g (0.5 poignée)'],
     ];
 
     foreach ($wrapIngredients as $ing) {
@@ -170,12 +170,12 @@ class RecipeSeeder extends Seeder
 
     $bowlIngredients = [
         ['name' => 'mélange céréales (cuites)', 'quantity' => 70, 'unity' => 'g'],
-        ['name' => 'œuf', 'quantity' => 1, 'unity' => ''],
+        ['name' => 'œuf', 'quantity' => 50, 'unity' => 'g (1 œuf moyen)'],
         ['name' => 'thon au naturel', 'quantity' => 40, 'unity' => 'g'],
         ['name' => 'skyr', 'quantity' => 20, 'unity' => 'g'],
-        ['name' => 'concombre', 'quantity' => 0.25, 'unity' => ''], // 1/4
-        ['name' => 'paprika fumé', 'quantity' => 1, 'unity' => 'pincée'],
-        ['name' => 'ciboulette', 'quantity' => 1, 'unity' => '/10 bouquet'], // facultatif
+        ['name' => 'concombre', 'quantity' => 75, 'unity' => 'g (0.25 concombre)'],
+        ['name' => 'paprika fumé', 'quantity' => 0.3, 'unity' => 'g (1 pincée)'],
+        ['name' => 'ciboulette', 'quantity' => 1.5, 'unity' => 'g (1/10 bouquet)'],
     ];
 
     foreach ($bowlIngredients as $ing) {

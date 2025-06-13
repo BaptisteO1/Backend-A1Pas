@@ -3,9 +3,12 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
-use App\Models\Recipe;
+use App\Http\Controllers\RecipeController;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
+
+Route::get('/recipes', [RecipeController::class, 'index']);
+Route::get('/recipes/{id}', [RecipeController::class, 'show']);
 
 // // Login route
 // Route::post('/login', function (Request $request) {
@@ -38,8 +41,4 @@ use Illuminate\Validation\ValidationException;
 //     $request->user()->currentAccessToken()->delete();
 //     return response()->json(['message' => 'Déconnecté']);
 // });
-
-Route::get('/recipes', function () {
-    return Recipe::with(['steps', 'ingredients'])->get();
-});
 
